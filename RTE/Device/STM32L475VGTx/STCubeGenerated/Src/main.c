@@ -25,9 +25,9 @@
 /* USER CODE BEGIN Includes */
 #include "cmsis_os2.h"
 #include "RTE_Components.h"
-#ifdef    RTE_VIO_BOARD
+
 #include "cmsis_vio.h"
-#endif
+
 #if defined(RTE_Compiler_EventRecorder)
 #include "EventRecorder.h"
 #endif
@@ -114,9 +114,7 @@ int main(void)
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   /* USER CODE BEGIN 2 */
-#ifdef RTE_VIO_BOARD
   vioInit();
-#endif
 
 #if defined(RTE_Compiler_EventRecorder) && \
     (defined(__MICROLIB) || \

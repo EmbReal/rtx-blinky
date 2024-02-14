@@ -1,0 +1,10 @@
+solution:
+  created-by: uv2csolution@1.2.0
+  created-for: CMSIS-Toolbox@2.0.0
+  compiler: AC6
+  target-types:
+    - type: BL475EIOT01A
+      device: STM32L475VGTx
+      optimize: none
+  projects:
+    - project: Blinky.cproject.yml
