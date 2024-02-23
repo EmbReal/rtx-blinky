@@ -97,3 +97,9 @@ project:
     - component: Keil::Device:STM32Cube HAL:RCC
     - component: Keil::Device:STM32Cube HAL:UART
     - component: Keil::Device:Startup
+
+  output:
+    type:
+      - elf
+      - hex
+      - bin
